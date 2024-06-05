@@ -11,11 +11,38 @@
         ];
         @endphp
         @yield('breadcrumb')
-    <div class="pd-20 card-box mb-30">
-        <div class="clearfix mb-20">
-            <div class="pull-left">
+    <div class="pd-20 card-box mb-30" dir="rtl">
+        <div class="clearfix mb-20 row" >
+            <div class="pull-left col-4">
                 <h4 class="text-blue h4">محصولات</h4>
             </div>
+            <div class="header-search col-8 border-2">
+            <form action="/ad/search" class="rtl">
+                <div class="hero__search__form form-group mb-0">
+                    <i class="dw dw-search2 search-icon"></i>
+                    <input dir="rtl" name="search_word" type="text" class="form-control search-input" placeholder="جستجو کنید">
+                    <div class="dropdown">
+                        
+                        <div class="dropdown-menu dropdown-menu-right" style="position: absolute;
+                        top: 4rem;
+                        left: 0px;
+                        will-change: transform;
+                        display: none;
+                        min-height: 200px;">
+                            <ul class="result">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search_result position-absolute rtl text-right">
+                        <span>
+                            برای جستجو، حداقل 2 کاراکتر را درج کنید.
+                        </span>
+                        <div class="search-result"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
         </div>
 
         <div class="table-responsive" dir="rtl">

@@ -10,7 +10,7 @@ $links = [
     ],
     [
         'title' => 'نمایش محصولات',
-        'link' => $item->name,
+        'link' => $items->name,
     ],
 ];
 @endphp
