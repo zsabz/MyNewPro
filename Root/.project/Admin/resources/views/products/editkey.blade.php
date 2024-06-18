@@ -1,5 +1,4 @@
-@extends('views::products.component.layout');
-
+@extends('views::products.index');
 @section('content')
   
 <form action="/ad/product/key/{{$keyword->id}}" method="post" dir="rtl">

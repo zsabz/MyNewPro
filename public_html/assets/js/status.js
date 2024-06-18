@@ -167,15 +167,16 @@ $(document).ready(function(){
     
   $('#body').click( function(e) {
   // alert('oo')
-  $(".hero__search__form  .dropdown-menu").fadeOut(500);
+  $(".hero__search__form  .dropdown-menu,#pro,#dropprow").fadeOut(500);
   }
   )
 }
 )
 
-$(".search-input").on({
+$(".search-input,#search-pro").on({
   keyup: function () {
-    $(".hero__search__form  .dropdown-menu").fadeIn(500);
+    $(this).parent().find('.c1')
+    $(".hero__search__form .dropdown-menu,").fadeIn(500);
     $(".result").html("");
     
     search($(this));

@@ -194,7 +194,7 @@ use Illuminate\Support\Facades\Auth;
                         <span class="user-icon">
                             <img src="vendors/images/photo1.jpg" alt="">
                         </span>
-                        <span class="user-name"> {{$user->name}} </span>
+                        <span class="user-name"> {{$user->name ?? ''}} </span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
                         <a class="dropdown-item" href="profile.html"><i class="dw dw-user1"></i> Profile</a>
@@ -432,13 +432,13 @@ use Illuminate\Support\Facades\Auth;
 <div class='alert alert-danger '> {{session('error')}}</div>
 @endif
 
-@if($errors->any())
+{{--@if($errors->any())
     <ul>
     @foreach($errors->all() as $error)
         <li class='alert alert-danger'>{{$error}}</li>
     @endforeach
     </ul>
-@endif
+@endif --}}
                 @yield('content')
             </div>
         </div>

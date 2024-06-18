@@ -39,8 +39,9 @@ class CategoryController extends Controller
             $items = Category::where('parent_id', 0)->with('child')->get();
             $item =  Category::where('id',$id)->first();
             // dd($item);
-            return view('views::products/editcat')->with(compact('item','items'));
-            
+            return $this->view('views::products.editcat',true)->with(compact('item','items'));
+            return $this->view('views::products.category', true)->with(compact('items'));
+            // $this->view('views::p/roducts.category', true)
         }
 
         public function update(Request $request, $id)

@@ -16552,3 +16552,9 @@ button:focus {
     width: 1rem;
   }
 }
+
+.card-box .avatar img{
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+}

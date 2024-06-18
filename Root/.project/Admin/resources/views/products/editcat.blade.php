@@ -1,4 +1,4 @@
-@extends('views::products.component.layout');
+@extends('views::products.index');
 
 @section('content')
   

@@ -34,7 +34,7 @@ class PublicController extends Controller
         }else{
             $model->status = 0;
         }
-        $model->update();
+        $model->update();   
         
         return response()->json(['status' => 200, 'message' => 'عملیات مورد نظر با موفقیت انجام شد!', 'txt' => $txt]);
 // `email_verified_at`;

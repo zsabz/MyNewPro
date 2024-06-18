@@ -20,7 +20,7 @@
             <form action="/ad/search" class="rtl">
                 <div class="hero__search__form form-group mb-0">
                     <i class="dw dw-search2 search-icon"></i>
-                    <input dir="rtl" name="search_word" type="text" class="form-control search-input" placeholder="جستجو کنید">
+                    <input dir="rtl" name="search_word" type="text" id="search-pro" class="form-control search-input" placeholder="جستجو sssکنید">
                     <div class="dropdown">
                         
                         <div class="dropdown-menu dropdown-menu-right" style="position: absolute;

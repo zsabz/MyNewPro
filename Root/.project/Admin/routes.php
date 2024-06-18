@@ -25,7 +25,7 @@ Route::get('db', function () {
         //     return view('views::products.index');
         // })->name('home');
         
-        // Route::get('/active', 'Admin\PublicController@active');
+        Route::get('/active', 'Admin\PublicController@active');
         Route::get('/search', 'Admin\SearchController@search');
     Route::resource('/dashbord', 'Admin\HomeController');
     Route::resource('/coment', 'Admin\ComentController');
